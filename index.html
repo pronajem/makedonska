@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pronájem bytu 1+kk s balkonem a garážovým stáním | Praha 9 - Střížkov</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-light: #eff6ff;
+      --text: #1f2937;
+      --text-muted: #4b5563;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --accent: #0284c7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+      padding: 16px;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 32px 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 20px;
+    }
+    h1 { color: var(--primary); font-size: 1.85rem; margin-bottom: 6px; }
+    h2 { color: var(--text-muted); font-size: 1.2rem; font-weight: 500; margin-bottom: 8px; }
+    .badge {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      font-weight: 600;
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+    .params-box {
+      background: var(--primary-light);
+      border: 1px solid #bfdbfe;
+      border-radius: 10px;
+      padding: 18px 24px;
+      margin-bottom: 28px;
+    }
+    .params-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px 20px;
+    }
+    .param-item { display: flex; justify-content: space-between; border-bottom: 1px dashed #cbd5e1; padding-bottom: 4px; }
+    .param-label { color: var(--text-muted); }
+    .param-val { font-weight: 700; color: var(--primary); text-align: right; }
+
+    .highlights {
+      background: #f1f5f9;
+      padding: 20px 24px;
+      border-radius: 8px;
+      margin-bottom: 28px;
+    }
+    .highlights h3 { margin-bottom: 12px; color: var(--primary); font-size: 1.15rem; }
+    .highlights ul { list-style: square inside; color: var(--text); }
+    .highlights li { margin-bottom: 6px; }
+
+    .description { margin-bottom: 30px; font-size: 1.05rem; }
+    .description p { margin-bottom: 14px; }
+    .important-notice {
+      background: #fffbeb;
+      border-left: 4px solid #f59e0b;
+      padding: 14px 18px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin: 24px 0 32px 0;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+    }
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+    .card img:hover { transform: scale(1.02); }
+    .card-caption {
+      padding: 10px 12px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-align: center;
+      background: #fafafa;
+      border-top: 1px solid var(--border);
+    }
+
+    .contact-box {
+      text-align: center;
+      background: var(--primary-light);
+      padding: 28px;
+      border-radius: 12px;
+      margin-top: 24px;
+      border: 1px solid #bfdbfe;
+    }
+    .btn-contact {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.15rem;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+      margin-top: 12px;
+    }
+    .btn-contact:hover { background: #172554; }
+    footer {
+      text-align: center;
+      margin-top: 32px;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Pronájem bytu 1+kk s balkonem a garážovým stáním</h1>
+    <h2>Praha 9 – Střížkov, ulice Makedonská 622</h2>
+    <span class="badge">K nastěhování: ihned / dle dohody</span>
+  </header>
+
+  <!-- PARAMETRY BYTU -->
+  <section class="params-box">
+    <div class="params-grid">
+      <div class="param-item"><span class="param-label">Dispozice:</span><span class="param-val">1+kk (se spací nikou)</span></div>
+      <div class="param-item"><span class="param-label">Plocha bytu:</span><span class="param-val">31,7 m²</span></div>
+      <div class="param-item"><span class="param-label">Balkon:</span><span class="param-val">ano (5,6 m²)</span></div>
+      <div class="param-item"><span class="param-label">Parkování:</span><span class="param-val">garážové stání v domě</span></div>
+      <div class="param-item"><span class="param-label">Budova / patro:</span><span class="param-val">novostavba s výtahem</span></div>
+      <div class="param-item"><span class="param-label">Vybavení:</span><span class="param-val">kompletně zařízený</span></div>
+      <div class="param-item"><span class="param-label">Nájemné (celkem):</span><span class="param-val">20 500 Kč / měsíc</span></div>
+      <div class="param-item"><span class="param-label">Zúčtovatelné služby:</span><span class="param-val">cca 3 600 Kč (vč. garáže)</span></div>
+      <div class="param-item"><span class="param-label">Vratná kauce:</span><span class="param-val">40 000 Kč</span></div>
+    </div>
+  </section>
+
+  <!-- HLAVNÍ PŘEDNOSTI -->
+  <section class="highlights">
+    <h3>Hlavní přednosti bytu:</h3>
+    <ul>
+      <li><strong>Vlastní garážové stání:</strong> bezpečné a pohodlné parkování v podzemních garážích přímo pod domem s přístupem „suchou nohou“ k výtahu.</li>
+      <li><strong>Chytrá dispozice:</strong> samostatný spací kout oddělený od obývací části zajišťuje plnohodnotné soukromí a komfort srovnatelný s 2+kk.</li>
+      <li><strong>Velký balkon (5,6 m²):</strong> prostorná lodžie s příjemným volným výhledem.</li>
+      <li><strong>Kompletní moderní vybavení:</strong> kuchyňská linka se spotřebiči (trouba a mikrovlnka ve sloupu, indukční varná deska, digestoř), jídelní stůl, rohová sedačka a dostatek úložných skříní.</li>
+      <li><strong>Koupelna s velkým sprchovým koutem:</strong> elegantní obklady, závěsné WC, otopný žebřík.</li>
+      <li><strong>Výborná dostupnost:</strong> 5–7 minut chůze od stanice metra C Střížkov, v sousedství parku Přátelství.</li>
+    </ul>
+  </section>
+
+  <!-- TEXT INZERÁTU -->
+  <section class="description">
+    <p>
+      Nabízíme k dlouhodobému pronájmu moderní, světlý a kompletně zařízený byt o dispozici <strong>1+kk s balkonem a vlastním vnitřním garážovým stáním</strong> v žádaném rezidenčním projektu na adrese <strong>Praha 9 – Střížkov, ul. Makedonská</strong>. Byt se nachází v novostavbě s moderním výtahem.
+    </p>
+    <p>
+      Byt má velmi prakticky vyřešené uspořádání. Díky vestavěné dělicí stěně vznikla <strong>útulná spací nika s manželským lůžkem</strong>, která je zcela oddělena od denní části. Obývací pokoj je vybaven rozkládací sedačkou, konferenčním stolkem, jídelním koutem a moderní kuchyňskou linkou na míru s vestavěnými spotřebiči (elektrická pečicí trouba, mikrovlnná trouba, varná deska, digestoř a dřez). Ve vstupní předsíni se nachází šatní skříň s mléčným sklem a botník. Koupelna disponuje prostorným sprchovým koutem, toaletou a designovým otopným žebříkem.
+    </p>
+    <p>
+      K bytu náleží <strong>vyhrazené garážové parkovací stání</strong> v suterénu domu, které řeší veškeré starosti s parkováním. <em>(V případě, že zájemce stání nepotřebuje, je možný pronájem samotného bytu za 18 500 Kč/měsíc).</em>
+    </p>
+    <p>
+      <strong>Finanční podmínky:</strong>
+    </p>
+    <ul style="margin-left: 20px; margin-bottom: 14px;">
+      <li>Měsíční nájemné za byt včetně garážového stání: <strong>20 500 Kč</strong></li>
+      <li>Zúčtovatelné zálohy na služby a správu domu (včetně garáže): <strong>cca 3 600 Kč</strong> (pro 1 osobu)</li>
+      <li>Elektřina: převod na nájemce (cca 800–1 000 Kč)</li>
+      <li>Vratná kauce: <strong>40 000 Kč</strong></li>
+    </ul>
+
+    <div class="important-notice">
+      <strong>Podmínky pro zájemce:</strong> Hledáme slušného a spolehlivého nájemce (jednotlivce či pár) se zájmem o dlouhodobý podnájem/nájem. Preferujeme nekuřáky bez větších zvířat.
+    </div>
+  </section>
+
+  <!-- FOTOGALERIE -->
+  <h2 style="color: var(--primary); text-align: center; margin: 30px 0 10px 0;">Fotogalerie a plánek</h2>
+  <div class="gallery-grid">
+    <div class="card">
+      <img src="01_obyvak_kuchyn.jpg" alt="Obývací pokoj s kuchyní a spacím koutem">
+      <div class="card-caption">Obývací pokoj a spací nika</div>
+    </div>
+    <div class="card">
+      <img src="05_spaci_kout.jpg" alt="Detail spacího koutu">
+      <div class="card-caption">Oddělený spací kout s lůžkem</div>
+    </div>
+    <div class="card">
+      <img src="03_kuchynska_linka.jpg" alt="Kuchyňská linka">
+      <div class="card-caption">Kuchyňská linka se spotřebiči</div>
+    </div>
+    <div class="card">
+      <img src="04_jidelni_stul.jpg" alt="Jídelní stůl a trouba">
+      <div class="card-caption">Jídelní kout a vestavné spotřebiče</div>
+    </div>
+    <div class="card">
+      <img src="02_obyvak_sedacka.jpg" alt="Posezení v obývacím pokoji">
+      <div class="card-caption">Sedací souprava a stolek</div>
+    </div>
+    <div class="card">
+      <img src="08_kuchyn_okno.jpg" alt="Pohled k balkonu">
+      <div class="card-caption">Vstup na balkon</div>
+    </div>
+    <div class="card">
+      <img src="09_koupelna.jpg" alt="Koupelna se sprchovým koutem">
+      <div class="card-caption">Moderní koupelna se sprchou</div>
+    </div>
+    <div class="card">
+      <img src="06_chodba_skrin.jpg" alt="Předsíň se skříní">
+      <div class="card-caption">Předsíň s vestavěnými skříněmi</div>
+    </div>
+    <div class="card">
+      <img src="07_pohled_trouba.jpg" alt="Pohled ze vstupní chodby">
+      <div class="card-caption">Pohled ze vstupu do pokoje</div>
+    </div>
+    <div class="card">
+      <img src="10_planek.jpg" alt="Půdorys bytu">
+      <div class="card-caption">Půdorys bytu s balkonem (5,6 m²)</div>
+    </div>
+  </div>
+
+  <!-- KONTAKTNÍ BLOK -->
+  <section class="contact-box">
+    <h3 style="color: var(--primary); margin-bottom: 8px;">Máte zájem o prohlídku?</h3>
+    <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 16px auto;">
+      Napište nám prosím pár vět o sobě (od kdy hledáte bydlení, pro kolik osob, zaměstnání, zda máte zájem i o parkovací stání). Rádi se vám ozveme zpět a domluvíme termín.
+    </p>
+    <a href="mailto:perla@volny.cz?subject=Zajem%20o%20pronajem%20bytu%201+kk%20Makedonska" class="btn-contact">
+      ✉ Kontaktovat majitele
+    </a>
+  </section>
+
+  <footer>
+    &copy; 2026 Pronájem bytu Praha 9 – Střížkov. Všechna práva vyhrazena.
+  </footer>
+</div>
+
+</body>
+</html>
